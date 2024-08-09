@@ -7,7 +7,15 @@
 
 body {
     background: rgba(255, 175, 175, 0.756);
-    max-width: min-content;
+    max-width: 100%;
+    overflow-x: hidden; /* Evita a rolagem horizontal */
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+.container {
+    max-width: 1200px; /* Define a largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    padding: 0 20px; /* Adiciona um pouco de espaço nas laterais */
 }
 
 /*1 navbar*/
@@ -294,8 +302,21 @@ p {
     margin: 0 auto;
     border-radius: 15px;
     margin-top: 20px;
+    margin-left: 135px;
 }
 
+.contact-form input[type=submit]{
+    width: 60%;
+    background-color: #000;
+    color: #fff;
+}
+
+.contact-form input[type=submit]:hover{
+    background-color: #3d3838;
+    border: 2px solid #ffffff;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
 
 /*footer container*/
 
